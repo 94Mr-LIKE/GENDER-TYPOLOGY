@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gender Typology 性格測驗</title>
+  <meta http-equiv="refresh" content="1;url=你的AppsScript網址">
+  <style>
+    body {
+      font-family: -apple-system, sans-serif;
+      background: #0f0f13;
+      color: #f0f0f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .container { padding: 20px; }
+    h1 { font-size: 1.5rem; margin-bottom: 20px; }
+    .loader {
+      width: 40px; height: 40px;
+      border: 3px solid #333;
+      border-top-color: #6c5ce7;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    a {
+      color: #a29bfe;
+      text-decoration: none;
+      padding: 12px 24px;
+      border: 1px solid #a29bfe;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 16px;
+    }
+    a:hover { background: #a29bfe22; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="loader"></div>
+    <h1>正在載入測驗...</h1>
+    <p>如果沒有自動跳轉</p>
+    <a href="你的AppsScript網址">👉 點這裡開始測驗</a>
+  </div>
+  <script>
+    window.location.href = "你的AppsScript網址";
+  </script>
+</body>
+</html>
+```
+
+4. 點頁面下方的 **Commit changes**（綠色按鈕）
+
+---
+
+### 步驟 4：啟用 GitHub Pages
+
+1. 進入 Repository 的 **Settings**（上方選單）
+2. 左側選單找到 **Pages**
+3. 在 **Source** 區塊：
+   - Branch 選 `main`
+   - 資料夾選 `/ (root)`
+4. 點 **Save**
+5. 等待約 1-2 分鐘，頁面會顯示你的網址：
+```
+   https://你的帳號.github.io/gt/
